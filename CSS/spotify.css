@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+
+}
+
+.flex-content {
+    display: flex;
+    flex-flow: row wrap;
+
+    flex: 90.5%;
+
+    border: 1px solid lightcoral;
+}
+
+
+
+/* navbar/menu----------------- */
+
+.nav {
+    flex: 13%;
+    background: #000000;
+
+    border: 1px solid red;
+
+}
+
+.navbar {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 24px 24px;
+
+}
+
+.navbar ul {
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    color: #a7a7a7;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.navbar ul img {
+    display: inline-block;
+}
+
+.navbar ul p {
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 13px;
+    display: inline-block;
+    margin: 0;
+}
+
+.navbar ul li:hover {
+    filter: invert(0%) sepia(2%) saturate(6%) hue-rotate(327deg) brightness(184%) contrast(101%);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+.divisoria {
+    height: 0.1px;
+    background: #a7a7a7;
+}
+
+
+
+
+
+
+
+/* conteudo da pagina--------------- */
+
+.conteudo {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 87%;
+    overflow: auto;
+}
+
+
+.conteudo-1 {
+    display: flex;
+    flex-flow: column wrap;
+
+    background: linear-gradient(#464040, #121212);
+
+}
+
+
+.lucca-marca {
+    display: flex;
+    height: 65px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 50px;
+
+    /* border: 1px solid gray; */
+}
+
+
+/* minha marca--------- */
+
+.lucca-marca p {
+    font-size: 15px;
+    color: white;
+}
+
+.lucca-marca img {
+    width: 80px;
+    clip-path: circle(40% at 50% 50%);
+
+}
+
+
+.playlists {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 32px;
+    margin: 0;
+    list-style: none;
+
+    /* border: 1px solid yellow; */
+}
+
+.playlists h2 {
+    flex: 100%;
+
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.playlists li {
+    flex: 25%;
+    margin: 0 10px;
+    margin-bottom: 15px;
+    height: 80px;
+    border-radius: 5px;
+    background: #8382825b;
+
+    /* border: 1px solid orange; */
+}
+
+
+.player {
+    flex: 9.5%;
+    background: #181818;
+
+    border: 1px solid blue;
+}
