@@ -109,12 +109,24 @@ body {
 
 .conteudo {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     flex: 87%;
-    overflow: auto;
     background: #121212;
+    overflow: auto;
+    height: 91vh;
 }
 
+::-webkit-scrollbar {
+    background-color: none;
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5b5b5b;
+
+
+}
 
 .conteudo-1 {
     display: flex;
@@ -244,7 +256,7 @@ body {
     display: flex;
     flex-flow: column wrap;
 
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .blocos {
@@ -299,8 +311,7 @@ body {
 .blocos li img {
     box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.445);
     border-radius: 8px;
-    width: 173px;
-    height: 173px;
+
 }
 
 .blocos li div h4 {
