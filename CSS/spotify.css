@@ -13,7 +13,7 @@ body {
 
 .flex-container {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     height: 100vh;
 
 }
@@ -24,7 +24,7 @@ body {
 
     flex: 90.5%;
 
-    border: 1px solid lightcoral;
+    /* border: 1px solid lightcoral; */
 }
 
 
@@ -35,7 +35,7 @@ body {
     flex: 13%;
     background: #000000;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 
@@ -81,32 +81,44 @@ body {
 
 .divisoria {
     height: 0.1px;
-    background: #a7a7a7;
+    background: #a7a7a752;
 }
 
 
 
 
+/* classses para mudar os icones do menu para branco pelo js */
+
+.hide {
+    display: none !important;
+
+}
+
+.branco {
+    filter: invert(0%) sepia(2%) saturate(6%) hue-rotate(327deg) brightness(184%) contrast(101%);
+
+}
 
 
 
-/* conteudo da pagina--------------- */
+/* container flex para o conteudo da pagina------------------------- */
 
 .conteudo {
     display: flex;
     flex-flow: column wrap;
     flex: 87%;
     overflow: auto;
+    background: #121212;
 }
 
 
 .conteudo-1 {
     display: flex;
     flex-flow: column wrap;
-
     background: linear-gradient(#464040, #121212);
-
 }
+
+/* minha marca e assinatura em todo site */
 
 
 .lucca-marca {
@@ -121,8 +133,6 @@ body {
 }
 
 
-/* minha marca--------- */
-
 .lucca-marca p {
     font-size: 15px;
     color: white;
@@ -133,6 +143,10 @@ body {
     clip-path: circle(40% at 50% 50%);
 
 }
+
+
+
+/* blocos de playlists na pagina */
 
 
 .playlists {
@@ -154,20 +168,91 @@ body {
 }
 
 .playlists li {
+    display: flex;
     flex: 25%;
     margin: 0 10px;
     margin-bottom: 15px;
     height: 80px;
-    border-radius: 5px;
+    border-radius: 10px;
     background: #8382825b;
+    align-items: center;
 
     /* border: 1px solid orange; */
 }
+
+.playlists li:hover {
+    cursor: pointer;
+    background: #b8b6b679;
+    transition: 0.2s;
+}
+
+.playlists li:hover .btn-playlist {
+    visibility: visible;
+}
+
+.img-playlist {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 80px;
+}
+
+.playlists li p {
+    font-weight: bold;
+    padding-left: 15px;
+    margin: 0;
+    display: inline-block;
+}
+
+.playlists li div {
+    display: flex;
+    flex: 1%;
+    justify-content: flex-end;
+}
+
+.btn-playlist {
+    visibility: hidden;
+    margin-right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 40px;
+    background: #1FDF64;
+    padding: 10px 10px;
+    border: none;
+    box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.226);
+}
+
+.btn-playlist img {
+    width: 25px;
+    height: 25px;
+}
+
+.btn-playlist:hover {
+    width: 47px;
+    height: 47px;
+    transition: 0.1s;
+}
+
+
+
+
+
+.conteudo-2 {
+    display: flex;
+    flex-flow: column wrap;
+
+    border: 1px solid green;
+}
+
+
+
+
 
 
 .player {
     flex: 9.5%;
     background: #181818;
 
-    border: 1px solid blue;
+    border-top: 0.2px solid rgba(255, 255, 255, 0.068);
+
+    /* border: 1px solid blue; */
 }
