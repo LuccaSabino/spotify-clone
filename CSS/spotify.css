@@ -290,6 +290,13 @@ body {
 
 }
 
+.titulos p:hover {
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
 .blocos li {
     padding: 16px;
     display: flex;
