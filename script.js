@@ -116,3 +116,30 @@ function mostrar5() {
     curtidas.classList.add('branco')
 
 }
+
+var play = document.getElementById('play')
+var pause = document.getElementById('pause')
+
+function music() {
+    var music = document.getElementById('music')
+
+
+    music.play()
+
+    play.classList.add('hide')
+    pause.classList.remove('hide')
+
+
+}
+
+function music2() {
+    var music = document.getElementById('music')
+
+
+    music.pause()
+
+    play.classList.remove('hide')
+    pause.classList.add('hide')
+
+
+}
