@@ -23,6 +23,7 @@ body {
     flex-flow: row wrap;
 
     flex: 90.5%;
+    height: 90vh;
 
     /* border: 1px solid lightcoral; */
 }
@@ -113,7 +114,7 @@ body {
     flex: 87%;
     background: #121212;
     overflow: auto;
-    height: 91vh;
+    height: 93vh;
 }
 
 ::-webkit-scrollbar {
@@ -339,7 +340,7 @@ body {
 
 
 .player {
-    flex: 9.5%;
+    flex: 10%;
     background: #181818;
 
     border-top: 0.2px solid rgba(255, 255, 255, 0.068);
@@ -348,5 +349,5 @@ body {
 }
 
 audio {
-    display: none;
+    display: block;
 }
